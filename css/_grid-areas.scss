@@ -1,0 +1,6 @@
+@mixin grid-areas {
+	aside.sidebar-container { grid-area: sidebar; }
+	section.img-destaque { grid-area: destaque; }
+	section.descricao { grid-area: descricao; }
+	.resultados { grid-area: cards; }
+}

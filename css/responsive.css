@@ -1,0 +1,147 @@
+@media screen and (min-width: 64em) {
+	header {
+		height: 80px;
+	}
+
+	img.logo-menu {
+		width: 80px;
+	}
+
+	.hamburger {
+		height: 80px;
+	}
+
+	nav {
+		height: calc(100% - 80px);
+		width: 19em;
+		top: 80px;
+		right: -19em;
+	}
+
+	aside {
+		width: 25% !important;
+		height: calc(100% - 80px);
+		background: #003371;
+		position: fixed;
+		overflow: auto;
+		transition: none;
+		top: 80px;
+		margin-top: 0;
+		-ms-scroll-chaining: none;
+		overscroll-behavior: contain;
+	}
+
+	.btn-sidebar {
+		display: none;
+	}
+
+	.sidebar {
+		display: block !important;
+		position: static;
+		padding-top: 0;
+	}
+
+	.sidebar p {
+		display: block;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 1.25em;
+		font-weight: 300;
+		text-transform: uppercase; 
+	}
+
+	.btn-container {
+		margin-bottom: 0;
+	}
+
+	main.main-encontrados,
+	main.main-perdidos,
+	main.main-adocao {
+		width: 75%;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		margin-top: 0;
+	}
+
+	main.main-home,
+	main.main-login,
+	main.main-sobrenos {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (min-width: 36.25em) {
+	.btn-menu {
+		margin-right: 1em;
+	}
+
+	section.descricao {
+		margin: 2em 1.5em;
+	}
+
+	section.descricao h2 {
+		color: #585858;
+		font-weight: 900;
+		margin-bottom: 1em;
+		font-size: 1.75em;
+	}
+
+	section.descricao p {
+		color: #4a4a4a;
+		margin-top: .5em;
+		line-height: 1.25em;
+	}
+}
+
+@media screen and (min-width: 20em) {
+	header p {
+		color: #bdc7dd;
+		font-size: 2.5em;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	header a:hover p {
+		color: #fff;
+	}
+	
+	nav {
+		width: 19em;
+		right: -19em;
+		transition: all .3s ease-in-out;
+	}
+
+	.transp {
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		position: fixed;
+		background-color: rgba(0,0,0,.25);
+		right: -100%;
+		transition: all .3s .1s cubic-bezier(0, 0, 0.2, 1);
+		overflow: auto;
+		-ms-scroll-chaining: none;
+    	overscroll-behavior: contain;
+	}
+
+	.transp-active {
+		right: 0;
+	}
+}
+
+@media screen and (max-height: 31.25em) {
+	nav ul {
+		justify-content: start;
+	}
+
+	nav ul li {
+		padding: 1.5em 0px;
+	}
+}
+
+@media screen and (max-width: 18.5625em) {
+	.resultados {
+		grid-template-columns: repeat(auto-fill, minmax(229px, 1fr));
+	}
+}
